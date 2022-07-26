@@ -65,7 +65,14 @@ Day 2 07/25/22
 
     •Revisit the Media Queries rules - should the mobile view extend until 1440px? then enter desktop?
 
+Day 3 07/26/22
+  Worked on:
+  •getting the page to look on model with the drafts given via spacing and matching font weights
+  •Implementing a grid structure for the 'plan-summary' div
 
+  Notes for Consideration:
+    •Still haven't revisited the Media Query
+    •
 
 
 ### Built with

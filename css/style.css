@@ -1,6 +1,5 @@
 /* Font Import Rules */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
-
 /* Reset Styles */
 *
 {
@@ -27,30 +26,41 @@
         flex-direction: column;
         color:var(--desaturated-blue);
         background-color:var(--pale-blue);
+        font-weight:500;
     }
-    .attribution 
-    { 
-        font-size: 11px; text-align: center; 
-        
-    }
-    .attribution a 
-    { 
-        color: var(--bright-blue); 
-    }
-    h3,strong
-    /* will break up into seperate selectors later */
+   
+    h3
     {
         color:var(--dark-blue);
+        margin-bottom:1.5rem;
+        font-weight: 900;
+        font-size:150%;
+    }
+    strong
+    {
+        color:var(--dark-blue);
+    }
+    p
+    {
+        font-size:16px;
+        margin-bottom:1.5rem;
     }
     button
     {
         background-color:var(--bright-blue);
         color:var(--very-pale-blue);
+        padding-top:15px;
+        padding-bottom:15px;
+        border-radius:10px;
+        margin-bottom:1.5rem;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight:700;
     }
     a
     {
         color:var(--bright-blue);
         text-decoration:underline;
+        font-weight:500;
     }
 /*Class Styles*/
 
@@ -71,28 +81,30 @@
 /* container for order inforamtion */
 
 {
-    outline:solid 1px black;
+    /* outline:solid 1px black; */
     max-width: 90%;
     margin:auto;
     border-radius:25px;
     background-color:var(--very-pale-blue);
+    box-shadow:1px 5px 15px;
 }
 
 .image-header img
 {
-    outline: dashed 1px green;
+    /* outline: dashed 1px green; */
     width:100%; /* image should not exceed the width of its parent container */
     height:auto;
     object-fit:contain;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    margin-bottom:1.5rem;
 }
 
 .order-summary
 /* organize all child elements with flexbox */
 {
-    outline:solid blue 1px;
-    width:80%;
+    /* outline:solid blue 1px; */
+    width:85%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -101,15 +113,55 @@
 }
 
 .plan-summary
-/* <!--fomat with grid?--> */
+/* grid container */
 {
     background-color: var(--grey-blue);
+    margin-bottom:2rem;
+    border-radius:15px;
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-template-rows:1fr;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.plan-grid-child-1
+{
+    margin-left:10px;
+    justify-self: center;
+}
+.plan-grid-child-2
+{
+    justify-self: start;
+    /* outline:solid 1px red; */
+    width:max-content;
+    margin-left:20px;
+    align-self:center;
+}
+.plan-grid-child-3
+{
+    /* outline:solid 1px blue; */
+    align-self:center;
+    margin-right:10px;
+    font-weight: 700;
+    
 }
 
 .cancel
 {
     text-decoration:none;
     color:var(--desaturated-blue);
+    margin-bottom:1.5rem;
+    font-weight:700;
+    font-size:90%;
+}
+.attribution 
+{ 
+    font-size: 11px; text-align: center; 
+    
+}
+.attribution a 
+{ 
+    color: var(--bright-blue); 
 }
 .empty
 {
@@ -127,7 +179,6 @@
     {
         background-image:url(../images/pattern-background-desktop.svg);
         height:40%;
-        background-image:0 -60%;
     }
 
     .order-card
@@ -138,7 +189,7 @@
     .order-summary
 /* organize all child elements with flexbox */
     {
-        width:70%;
+        width:75%;
     }
 }
 
