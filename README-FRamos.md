@@ -57,7 +57,7 @@ Day 2 07/25/22
   •Media Queries
 
   Notes for consideration:
-    •Media Queries have been implemented and are cropped once the browser width reaches ~1200px
+    •Media Queries have been implemented and are cropped once the browser width reaches ~1200px but is not smooth
 
     •When formatting the 'plan-summary' div use grid format and seperate the elements into 3 different divs: 1 for the icon, 1 for the annual plan & price text and 1 for the change icon
 
@@ -72,7 +72,24 @@ Day 3 07/26/22
 
   Notes for Consideration:
     •Still haven't revisited the Media Query
-    •
+    •Still need to play with the background image
+
+Day 4 08/04/22
+  Worked on:
+  •improving how media queries are implemented to give a consistent view between mobile, tablet and desktop
+  •Implementing hover actions on interactive elements that create feedback for the user
+  •Improved the display of the background-image
+
+  Notes for Consideration
+    •At the end of the project, here a some things that I was constantly reading the documentation of to make sure I was using correctly:
+      •background-size and its values
+      •the definition of a vh unit
+      •border-radius and its values
+      •display:grid, its values and how their are used between the parent container and its child elements
+    •At the end of the project, here are some new pieces of code that I picked up on
+      •vh (value)
+      •:root (selector)
+      •defining variables for color (rules)
 
 
 ### Built with
@@ -92,23 +109,8 @@ Day 3 07/26/22
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-Dealing with matching border radius' between images and their divs
+W.I.L. #1
+  Dealing with matching border radius' between images and their divs
 On previous attempts, I've tried finding a way to use css object-fit and background-fit rules to try and crop an image so that it doens't exceed its parent containers. But when a border radius is implemented the img shoots past the border of its parent div - therefore, by implementing the border-top-xx-radius rules I can match the border-radius between an image and its parent container
 ```html
 <section class="order-card">
@@ -141,7 +143,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Setting footer at bottom](https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14) - Looked for a simple method to set the footer to the bottom and the resource was straight to the point, I had even used some of its formatting in my own solution to organizing the elements and it fit in great.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
